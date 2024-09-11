@@ -1,0 +1,37 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="success">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>หน้าปัจจุบัน</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+
+
+  <ion-list>
+    <ion-card >
+    <ion-item *ngFor="let items of items" >
+      <ion-thumbnail slot="start">
+        <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/thumbnail.svg" />
+      </ion-thumbnail>
+
+      <ion-label>
+        {{ items.name }} <br>
+       ราคา {{ items.price }}
+
+      </ion-label>
+      <ion-button  slot="end" color="danger" (click)="confirmDelete('i')" size="medium" with="100">
+        <ion-icon name="trash-outline"></ion-icon>
+      </ion-button>
+    </ion-item>
+
+
+
+
+
+
+
+  </ion-card>
+  </ion-list>
+</ion-content>

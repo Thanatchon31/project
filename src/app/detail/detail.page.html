@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home">ย้อนกลับ</ion-back-button>
+    </ion-buttons>
+    <ion-title></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <input type="file" (change)="onFileChange($event)" accept="image/*" style="display: none;" #fileInput />
+  <ion-button expand="full" (click)="fileInput.click()">
+    <ion-label >
+    เพิ่มรูปภาพ
+  </ion-label>
+  </ion-button>
+  <ion-img *ngIf="imageSrc" [src]="imageSrc" style="max-width: 100%; margin-top: 20px;"></ion-img>
+
+  <ion-grid>
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="12" class="ion-text-center">
+      </ion-col>
+      <ion-col size="12">
+        <ion-item>
+          <ion-label position="floating">กรอกชื่อสินค้า</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col size="12">
+        <ion-item>
+          <ion-label position="floating">กรอกราคา</ion-label>
+          <ion-input type="number"></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col size="12">
+        <ion-item>
+          <ion-label position="floating">กรอกจำนวน</ion-label>
+          <ion-input type="number"></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col size="12">
+
+        <ion-button id="present-alert" color="success" expand="full" shape="round" >บันทึกข้อมูล</ion-button>
+        <ion-alert
+          trigger="present-alert"
+          header="บันทึกข้อมูลเสร็จสิ้น"
+          [buttons]="alertButtons1"
+          (didDismiss)="setResult($event)"
+        ></ion-alert>
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+
+

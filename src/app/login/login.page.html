@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-title><ion-icon name="person" size="large"></ion-icon> ร้านวุฒิศักดิ์</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card color="success">
+    <ion-card-header>
+      <ion-card-title>Login</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="floating">Username</ion-label>
+        <ion-input [(ngModel)]="username"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Password</ion-label>
+        <ion-input type="password" [(ngModel)]="password"></ion-input>
+      </ion-item>
+      <ion-button expand="full" (click)="login()" color="secondary">Login</ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+

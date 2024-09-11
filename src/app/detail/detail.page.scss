@@ -1,0 +1,24 @@
+ion-content {
+  --background: #e5e5e5;
+}
+
+ion-header {
+  ion-toolbar {
+    --background: #4CAF50; /* สีเขียวตามภาพ */
+  }
+}
+
+.custom-toast {
+  --background: #4caf50;  /* พื้นหลังสีเขียว */
+  --color: white;         /* ข้อความสีขาว */
+  --border-radius: 20px;  /* ขอบมน */
+  text-align: center;     /* จัดข้อความให้อยู่กลาง */
+  font-size: 18px;        /* ขนาดข้อความ */
+  padding: 10px 20px;     /* ขนาดช่องว่างภายใน */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);  /* เพิ่มเงา */
+}
+ion-img {
+  border: 2px solid #ccc;  /* ขอบของรูปภาพ */
+  border-radius: 10px;     /* ขอบมน */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* เงา */
+}

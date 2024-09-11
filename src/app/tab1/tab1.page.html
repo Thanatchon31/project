@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-title>
+      <ion-icon name="cart-outline"></ion-icon>
+      ร้านวุฒิศักดิ์
+    </ion-title>
+  </ion-toolbar>
+  <ion-toolbar color="success">
+    <ion-searchbar shape="round"></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+    <div class="bg">
+    <ion-grid>
+    <ion-row>
+      <ion-col size="6" size-md="5" size-lg="2" *ngFor="let i of items ">
+        <ion-card shape="round">
+        <div class="shop">
+    <img [src]="i.imageUrl" alt="">
+    <ion-label><h2>{{i.name}} <br>
+    ราคา {{i.price}}บาท</h2>
+    </ion-label>
+    </div>
+    </ion-card>
+      </ion-col>
+    </ion-row>
+    </ion-grid>
+    </div>
+
+</ion-content>

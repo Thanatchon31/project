@@ -1,0 +1,38 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="success">
+    <ion-buttons slot="start">
+      <ion-back-button default-href="#"></ion-back-button>
+    </ion-buttons>
+    <ion-title>ย้อนกลับ</ion-title>
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <header>
+    <h1 style="text-align: center; font-size: 50px;"><ion-icon name="cart" size="100px"></ion-icon> ร้านวุฒิศักดิ์</h1></header>
+
+
+  <ion-content>
+    <!-- ปุ่มที่กดแล้วจะนำไปยังหน้าถัดไป -->
+     <br>
+    <ion-button expand="block" (click)="goToNextPage()" color="success" shape="round" size="large">
+      <ion-label color="light">
+    จัดสต็อกสินค้า
+    </ion-label>
+
+    </ion-button>
+    <br>
+<ion-label>
+
+  <ion-button expand="block" (click)="delet()" color="danger" shape="round" size="large" >
+    <ion-label color="">
+    ลบสินค้า
+  </ion-label>
+  </ion-button>
+</ion-label>
+
+</ion-content>
+
+
