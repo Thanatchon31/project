@@ -13,7 +13,7 @@ export class LoginPage {
   constructor(private router: Router) {}
 
   login() {
-    if (this.username === 'admin' && this.password === '0') {
+    if (this.username === 'Wutthisak' && this.password === '72158') {
       // นำทางไปยังหน้า Home ถ้าข้อมูลถูกต้อง
       this.router.navigate(['/home']);
     } else {
