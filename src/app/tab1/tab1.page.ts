@@ -71,6 +71,36 @@ export class Tab1Page {
       price: 17,
     imageUrl: 'assets/images/body.jpg'
     },
+    {
+      id:11,
+      name:'ฟาร์มเฮ้าส์',
+      price: 42,
+    imageUrl: 'assets/images/fram1.jpg'
+    },
+    {
+      id:12,
+      name:'ป๊อกกี้',
+      price: 10,
+    imageUrl: 'assets/images/pocky.jpg'
+    },
+    {
+      id:13,
+      name:'นมตรามะลิ ',
+      price: 34,
+    imageUrl: 'assets/images/nom.jpg'
+    },
+    {
+      id:14,
+      name:'กาแฟซองเนสเขียว',
+      price: 5,
+    imageUrl: 'assets/images/kafaig.jpg'
+    },
+    {
+      id:15,
+      name:'กาแฟซองเนสเเดง',
+      price: 5,
+    imageUrl: 'assets/images/kafaid.jpg'
+    },
 
     ]
 
